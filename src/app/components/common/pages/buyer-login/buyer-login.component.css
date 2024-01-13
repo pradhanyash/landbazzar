@@ -1,0 +1,25 @@
+.buyer-container{
+    text-align: center;
+    
+}
+
+.login-content-container{
+    max-width: fit-content;
+    margin: auto;
+}
+
+.back-drop{
+    background-color: rgba(126, 123, 130, 0.6);
+    background-color: rgb(101, 97, 94, 0.6);
+    padding: 5%;
+    padding-bottom: inherit;
+    padding-top: inherit;
+    border-radius: 5px;
+}
+
+/* .username-container{
+    display: flex;
+}
+.password-container{
+    display: flex;
+} */

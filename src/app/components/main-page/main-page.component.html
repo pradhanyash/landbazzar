@@ -1,0 +1,77 @@
+<!-- <div class="home-container">
+    <div class="slider-container">
+        <app-slider></app-slider>
+    </div>
+    <div class="new-container">
+        <mat-card>
+            <mat-card-header>New Container</mat-card-header>
+            <mat-card-content>{{container}}</mat-card-content>
+        </mat-card>
+    </div>
+    <div class="container-property recent-properties">
+        <div class="back-drop">
+            <h2 class="container-property-title">Recent Property</h2>
+            <div class="row container-property-row">
+                <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="cardSlideConfig1">
+                        <mat-card ngxSlickItem *ngFor="let card of cardArray" class="slide">
+                            <mat-card-header>
+                                <mat-card-title>{{card.heading}}</mat-card-title>
+                            </mat-card-header>
+                            <div class="card-text-body">{{card.text}}</div>
+                        </mat-card>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+    <div class="container-property hot-properties">
+        <div class="back-drop">
+            <h2 class="container-property-title">Hot Properties</h2>
+            <div class="row container-property-row">
+                <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="cardSlideConfig">
+                        <mat-card ngxSlickItem *ngFor="let card of cardArray" class="slide">
+                            <mat-card-header>
+                                <mat-card-title>{{card.heading}}</mat-card-title>
+                            </mat-card-header>
+                            <div class="card-text-body">{{card.text}}</div>
+                        </mat-card>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="home-container">
+    <div class="slider-container">
+        <app-slider></app-slider>
+    </div>
+    <div class="container-property recent-properties">
+        <div class="back-drop">
+            <h2 class="container-property-title">Recent Property</h2>
+            <div class="row container-property-row">
+                <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="cardSlideConfig1">
+                        <mat-card ngxSlickItem *ngFor="let card of cardArray" class="slide">
+                            <mat-card-header>
+                                <mat-card-title>{{card.heading}}</mat-card-title>
+                            </mat-card-header>
+                            <mat-card-content class="card-text-body">{{card.text}}</mat-card-content>
+                        </mat-card>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+    <div class="container-property hot-properties">
+        <div class="back-drop">
+            <h2 class="container-property-title">Hot Properties</h2>
+            <div class="row container-property-row">
+                <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="cardSlideConfig">
+                        <mat-card ngxSlickItem *ngFor="let card of cardArray" class="slide">
+                            <mat-card-header>
+                                <mat-card-title>{{card.heading}}</mat-card-title>
+                            </mat-card-header>
+                            <mat-card-content class="card-text-body">{{card.text}}</mat-card-content>
+                        </mat-card>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</div>

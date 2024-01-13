@@ -1,0 +1,97 @@
+<div class="menu-container">
+  <mat-card class="menu-container">
+      <mat-card-title-group>
+        <button class="menu-button" mat-icon-button (click)="toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <mat-card-title-group class="logo">
+          <!-- <img mat-card-sm-image src="https://picsum.photos/200/300"> -->
+          <img mat-card-sm-image [src]="logoSrc">
+        </mat-card-title-group>
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-card-title class="title">{{title}}</mat-card-title>
+            <mat-card-subtitle class="sub-title">{{subTitle}}</mat-card-subtitle>
+          </mat-card-title-group>
+        </mat-card-header>
+        
+        <mat-card-actions align="end" class="header-button-container">
+          <button mat-button [matMenuTriggerFor]="homeMenu">
+            <mat-icon>home</mat-icon><span>Home</span>
+          </button>
+          
+          <button mat-button [matMenuTriggerFor]="aboutMenu">
+            <mat-icon>account_balance</mat-icon><span>About Us</span>
+          </button>
+          
+          <button mat-button>
+            <mat-icon>feedback</mat-icon><span>Feedback</span>
+          </button>
+
+          <button mat-button [matMenuTriggerFor]="sellerMenu">
+            <mat-icon>person</mat-icon><span>Seller</span>
+          </button>
+
+          <button mat-button [matMenuTriggerFor]="buyerMenu">
+            <mat-icon>person</mat-icon><span>Buyer</span>
+          </button>
+          
+          <mat-menu class="menu_drop_down" #homeMenu="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+          </mat-menu>
+          
+          <mat-menu class="menu_drop_down" #sellerMenu="matMenu">
+            <button mat-menu-item routerLink="seller-login">Login</button>
+            <button mat-menu-item routerLink="seller-register">Register</button>
+          </mat-menu>
+          
+          <mat-menu class="menu_drop_down" #buyerMenu="matMenu">
+            <button mat-menu-item routerLink="buyer-login">Login</button>
+            <button mat-menu-item routerLink="buyer-register">Register</button>
+          </mat-menu>
+          
+          <mat-menu class="menu_drop_down" #aboutMenu="matMenu" xPosition="after">
+            <button mat-menu-item [matMenuTriggerFor]="contactMenu">
+              <mat-icon>call</mat-icon><span>Contact Us</span>
+            </button>
+            <button mat-menu-item [matMenuTriggerFor]="emailMenu">
+              <mat-icon>email</mat-icon><span>Email Us</span>
+            </button>
+          </mat-menu>
+          
+          <mat-menu class="menu_drop_down" #contactMenu="matMenu" xPosition="after">
+            <button class="menu-button-action">
+              <mat-icon class="icon-button-action">call</mat-icon>
+              <span>+91 9167090001</span>
+            </button>
+          </mat-menu>  
+          <mat-menu class="menu_drop_down" #emailMenu="matMenu" xPosition="after">
+            <mat-list>
+              <mat-list-item>
+                <button class="menu-button-action">
+                  <mat-icon class="icon-button-action">alternate_email</mat-icon>
+                  <span>Inquiry:</span>
+                  <span class="action-text">enquiry@indialandbazaar.com </span>
+                </button>
+              </mat-list-item>
+              <mat-list-item>
+                <button class="menu-button-action">
+                  <mat-icon class="icon-button-action">alternate_email</mat-icon>
+                  <span>Channel Partner:</span>
+                  <span class="action-text">welcome@indialandbazaar.com </span>
+                </button>
+              </mat-list-item>
+              <mat-list-item>
+                <button class="menu-button-action">
+                  <mat-icon class="icon-button-action">alternate_email</mat-icon>
+                  <span>Allied Service:</span>
+                  <span class="action-text">services@indialandbazaar.com </span>
+                </button>
+              </mat-list-item>
+            </mat-list>
+          </mat-menu>
+        </mat-card-actions>
+      </mat-card-title-group>
+    </mat-card>
+</div>

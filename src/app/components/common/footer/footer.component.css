@@ -1,0 +1,34 @@
+.footer-container-body{
+    margin: inherit;
+    color: #e1c2a0;
+    padding-top: 1%;
+    font-size: initial;
+}
+
+/* .light-back-drop{ */
+.footer-container {
+    /* background-image: url(~src/assets/images/pngwing1.png); */
+    background-image: url(~src/assets/images/download.png);
+    /* background-image: url(~src/assets/images/pngwing1.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 0;
+    padding-top: inherit;
+    /* transform: scaleY(-1); */
+}
+/* .footer-container { */
+.light-back-drop{
+    background-color: rgba(126, 123, 130, 0.6);
+    background-color: rgb(101, 97, 94, 0.6);
+    padding: 5%;
+    padding-bottom: inherit;
+    padding-top: inherit;
+    border-radius: 5px;
+}
+
+.footer-contact-text{
+    display: inline-flex;
+}
+.footer-contact-menu-text{
+    padding-top: 1%;
+}

@@ -1,0 +1,58 @@
+<p>contact-us works!</p>
+<mat-card>
+    <mat-card-title>Contact Us</mat-card-title>
+    <mat-card-content>
+        <div class="contact-area">
+            <form [formGroup]="contactForm" (ngSubmit)="formSubmit(contactForm)">
+                <div class="form-group-container">
+                    <table class="full-width" cellSpacing="50">
+                        <tr>
+                            <td>
+                                <mat-form-field *ngIf="contactForm.first_name">
+                                    <mat-label>First Name</mat-label>
+                                    <input mat-input formControlName="first_name" placeholder="Enter first name" />
+                                </mat-form-field>
+                            </td>
+                            <td>
+                                <mat-form-field *ngIf="contactForm.last_name">
+                                    <mat-label>Last Name</mat-label>
+                                    <input 
+                                        mat-input 
+                                        formControlName="last_name" 
+                                        placeholder="Enter last name" />
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <mat-form-field *ngIf="contactForm.subject">
+                                    <mat-label>Subject</mat-label>
+                                    <input 
+                                        mat-input
+                                        formControlName='subject'
+                                        placeholder="Enter subject" />
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <mat-form-field *ngIf="contactForm.comments">
+                                    <mat-label>Comment</mat-label>
+                                    <textarea formControlName="comments" placeholder="Write your queries" mat-input>
+                                    </textarea>
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <button mat-button>SUBMIT</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </mat-card-content>
+</mat-card>

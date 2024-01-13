@@ -1,0 +1,70 @@
+.mat-card-title-group{
+    justify-content: unset;
+    padding-top: 10px;
+    color: #3D3B39;
+}
+.menu-button{
+    place-self: center;
+}
+.logo{
+    padding-left: 10px;
+}
+.mat-card-actions{
+    margin-left: auto;
+}
+button{
+    background: none;
+}
+span{
+    color: #3D3B39;
+    font: menu;
+}
+mat-icon{
+    /* color: #fc7c0c; */
+    color: #E67809;
+}
+.menu-container{
+    background-image: url(~src/assets/images/home-cover1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 0;
+    padding-top: inherit;
+}
+.sub-title{
+    font: small-caption;
+    font-style: italic;
+    margin-top: 8px !important;
+}
+.title{
+    font-size: -webkit-xxx-large;
+    font-variant: contextual;
+    font-family: auto;
+    text-shadow: 1px 1px #D8B083;
+    margin-top: 15px;
+    margin-bottom: 0 !important;
+}
+
+.menu_drop_down{
+    color: #3D3B39;
+}
+
+.menu-button-action{
+    border: none;
+    display: flex;
+}
+
+.action-text{
+    padding: inherit;
+}
+
+.icon-button-action{
+    margin-right: 0.75em;
+}
+
+@media screen and (max-width: 500px){
+    .mat-card-actions{
+        display: grid;
+        margin: 0;
+        padding: 0;
+    }
+}

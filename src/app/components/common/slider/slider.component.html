@@ -1,0 +1,23 @@
+<div class="slick-carousel">
+    <!-- <div class="col-sm-12">   -->
+        <!-- <div class="row">  
+            <div class="col-sm-12 btn btn-primary">  
+                Image Slider  
+            </div>  
+        </div>  
+    </div>  
+    <hr style="background-color:red" />   -->
+    <div class="row slick-carousel-container"> 
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">  
+            <div ngxSlickItem *ngFor="let image of sliderArray" class="slide">  
+                <img src="{{image.img}}" alt="{{image.alt}}" width="100%">
+                <blockquote class="slider-text">{{sliderText}}</blockquote>
+                <!-- <q>{{sliderText}}</q> -->
+            </div>  
+        </ngx-slick-carousel>  
+    </div>
+    <!-- <hr style="background-color: green;"> -->
+    <!-- <div class="slider-text">
+        <article>{{sliderText}}</article>
+    </div> -->
+</div>

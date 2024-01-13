@@ -1,0 +1,20 @@
+<mat-sidenav-container>
+    <mat-sidenav [(opened)]="open">
+        <app-side-navigation></app-side-navigation>        
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar>
+            <mat-toolbar-row class="main-menu-container">
+                <app-menu (toggleMenu)="receive($event)"></app-menu>
+                <div class="all-page-container">
+                    <!-- <app-home></app-home> -->
+                    <!-- <div class="home-page-container">
+                        <app-main-page></app-main-page>
+                    </div> -->
+                    <router-outlet></router-outlet>
+                </div>
+                <app-footer></app-footer>
+            </mat-toolbar-row>
+        </mat-toolbar>
+    </mat-sidenav-content>
+</mat-sidenav-container>

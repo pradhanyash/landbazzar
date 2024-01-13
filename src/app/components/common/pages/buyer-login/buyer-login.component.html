@@ -1,0 +1,38 @@
+<div class="buyer-container">
+    <mat-card>
+        <div class="back-drop">
+            <mat-card-title>Login</mat-card-title>
+            <mat-card-content class="login-content-container">
+                <form [formGroup]="buyerLogin" (ngSubmit)="loginSubmit(buyerLogin)">
+                    <div class="login-container">
+                        <table>
+                            <tr>
+                                <td>
+                                    <mat-form-field>
+                                        <mat-label>Username</mat-label>
+                                        <input matInput formControlName="username" placeholder="Enter your username">
+                                        <mat-icon matSuffix>person</mat-icon>
+                                    </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <mat-form-field>
+                                        <mat-label>Password</mat-label>
+                                        <input [type]="visibility ? 'text': 'password'" matInput formControlName="password" placeholder="Enter your password">
+                                        <mat-icon matSuffix (click)="visibilityCheck()">{{eyeIcon}}</mat-icon>
+                                    </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button mat-raised-button color="accent">SUBMIT</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </mat-card-content>
+        </div>
+    </mat-card>
+</div>
